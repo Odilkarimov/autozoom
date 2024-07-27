@@ -1,5 +1,6 @@
-import { Outlet } from "react-router-dom"
-import Navbar from "../components/navbar"
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/navbar";
+import Header from "../components/headers";
 
 const Layout = () => {
   return (
@@ -8,12 +9,13 @@ const Layout = () => {
         <nav>
           <Navbar />
         </nav>
+        <Header />
       </header>
       <main>
         <Outlet />
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
