@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="container-box flex gap-[30px] items-center">
-      <div className="flex gap-[10px]">
+      <div className="flex gap-[20px]">
         <div>
           <img className="cursor-pointer" width={25} src={RusFlag} alt="" />
         </div>
@@ -16,28 +16,28 @@ const Navbar = () => {
         </div>
       </div>
       <div>
-        <Input placeholder="Search" prefix={<SearchOutlined />} />
+        <Input className="h-[50px] w-[400px]" placeholder="Search" prefix={<SearchOutlined />} />
+      </div>
+      <div className="px-[40px]">
+        <img width={100} src={AutoZoomLogo} alt="" />
       </div>
       <div>
-        <img width={80} src={AutoZoomLogo} alt="" />
+        <NavLink className="font-semibold text-[20px]" to={"/cars"}>cars</NavLink>
       </div>
       <div>
-        <NavLink to={"/cars"}>cars</NavLink>
+        <NavLink className="font-semibold text-[20px]" to={"/brand"}>Brand</NavLink>
       </div>
       <div>
-        <NavLink to={"/brand"}>Brand</NavLink>
+        <NavLink className="font-semibold text-[20px]" to={"/services"}>services</NavLink>
       </div>
       <div>
-        <NavLink to={"/services"}>services</NavLink>
+        <NavLink className="font-semibold text-[20px]" to={"/about_us"}>about</NavLink>
       </div>
       <div>
-        <NavLink to={"/about_us"}>about</NavLink>
+        <NavLink className="font-semibold text-[20px]" to={"/contacts"}>contacts</NavLink>
       </div>
       <div>
-        <NavLink to={"/contacts"}>contacts</NavLink>
-      </div>
-      <div>
-        <NavLink to={"/blog"}>blog</NavLink>
+        <NavLink className="font-semibold text-[20px]" to={"/blog"}>blog</NavLink>
       </div>
     </div>
   );
